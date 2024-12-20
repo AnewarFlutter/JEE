@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f7; /* Teinte plus douce pour le fond */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Améliore la lisibilité */
+    color: #333; /* Texte légèrement gris */
+}
+
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute un effet d'ombre */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em; /* Augmente la taille pour une meilleure visibilité */
+    font-weight: bold;
+}
+
+nav {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacement uniforme entre les éléments */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease; /* Animation de transition sur hover */
+}
+
+nav ul li a:hover {
+    color: #00bcd4; /* Couleur hover plus vive */
+    text-decoration: underline;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.8em;
+    color: #007BFF; /* Harmonise la couleur avec l'en-tête */
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Améliore l'apparence */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px; /* Plus d'espace pour une meilleure lisibilité */
+    text-align: left;
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternance des couleurs pour les lignes */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Effet hover */
+}
+
+a.button {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px 0;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+a.button:hover {
+    background-color: #0056b3;
+}
+
+a.button.delete {
+    background-color: #dc3545;
+}
+
+a.button.delete:hover {
+    background-color: #c82333;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+form input[type="submit"],
+button {
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover,
+button:hover {
+    background-color: #218838;
+}
